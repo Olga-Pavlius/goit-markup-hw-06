@@ -1,6 +1,6 @@
 body {
-    font-family: "roboto", sans-serif;
-    color: #2e2f42;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
     background-color: #fff;
 }
 
@@ -24,7 +24,7 @@ a {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -46,16 +46,20 @@ a {
     color: #2e2f42;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-item-logo {
+    font-weight: 500;
+    color: #434455;
+}
+.menu-item-logo:hover,
+.menu-item-logo:focus {
     color: #404bbf;
 }
-
 
 .menu-link {
 }
 
 .address {
+    font-style: normal;
 }
 
 .contacts {
@@ -80,7 +84,7 @@ a {
 .title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -99,6 +103,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    cursor: pointer;
 }
 
 .button:hover, 
@@ -109,6 +114,10 @@ a {
 .tools {
     width: 1128px;
     height: 104px;
+}
+
+.tools-h {
+    font-weight: 500;
 }
 
 .tools-title {
@@ -136,26 +145,23 @@ a {
 }
 
 .team-title {
+    font-weight: 500;
+    text-transform: capitalize;
     font-size: 36px;
-    line-height: 1.11111;
-    letter-spacing: 0.02em;
+    line-height: 1.11;
     text-align: center; 
 }
 
 .team {
-    border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
-    
 }
 
 .team-item {
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #FFFFFF;
 }
 
 .team-images {
@@ -184,16 +190,13 @@ a {
 }
 
 .portfolio-title {
+    font-weight: 500;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
 
-}
-
-.row {
-    width: 1128px;
-    height: 420px;
 }
 
 .portfolio-item {
@@ -225,9 +228,14 @@ a {
     background-color: #2e2f42;
 }
 
-.footer-content {
-    width: 264px;
-    height: 116px;
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
 }
 
 .logo-span-footer {
