@@ -51,10 +51,11 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #434455;
 }
 .menu-item-logo:hover,
-.menu-item-logo:focus {
+.menu-item-logo:focus,
+.menu-item-logo:active {
     color: #404bbf;
 }
 
