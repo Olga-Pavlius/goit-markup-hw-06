@@ -13,8 +13,7 @@ a {
 }
 
 .header {
-    width: 1440px;
-    height: 72px;
+   
 }
 
 .nav {
@@ -36,8 +35,7 @@ a {
 }
 
 .menu {
-    width: 261px;
-    height: 24px;
+   
 }
 
 .menu-item {
@@ -60,7 +58,11 @@ a {
 }
 
 .menu-link {
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .address {
@@ -81,8 +83,6 @@ a {
 }
 
 .hero-images {
-    width: 1440px;
-    height: 600px;
     background-color: #2e2f42;
 }  
 
@@ -114,8 +114,7 @@ a {
 }
 
 .tools {
-    width: 1128px;
-    height: 104px;
+
 }
 
 .tools-h {
@@ -139,8 +138,6 @@ a {
 }
 
 .our-team {
-    width: 1440px;
-    height: 732px;
     background-color: #f4f4fd;
 }
 
@@ -158,8 +155,6 @@ a {
 }
 
 .team-item {
-    width: 264px;
-    height: 380px;
     background-color: #FFFFFF;
 }
 
@@ -212,8 +207,6 @@ a {
 }
 
 .footer {
-    width: 1440px;
-    height: 324px;
     background-color: #2e2f42;
 }
 
