@@ -14,6 +14,10 @@ body {
     padding-left: 0;
     list-style-type: none;
   }
+
+  img {
+    display: block;
+  }
   
   a {
     text-decoration: none;
@@ -140,6 +144,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
 }
 
 .button {
@@ -246,6 +251,7 @@ body {
 
 .team-images {
   display: block;
+  width: calc((100% - 72px) / 4);
 }
 
 .card-container {
@@ -259,6 +265,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -311,11 +318,11 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-card [
+.portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc; 
   border-top: none;
-]
+}
 
 .portfolio-link {
     font-weight: 500;
