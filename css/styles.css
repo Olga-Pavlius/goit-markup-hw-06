@@ -175,13 +175,6 @@ body {
   padding: 120px 0;
 }
 
-.tools-h {
-    font-weight: 700;
-    color: #2e2f42;
-    max-width: 496px;
-    margin-bottom: 8px;
-}
-
 .tools-list {
   display: flex;
   gap: 24px;
