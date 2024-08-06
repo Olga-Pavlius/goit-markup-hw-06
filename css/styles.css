@@ -65,7 +65,7 @@ body {
     gap: 40px;
   }
 
-  .nav-list {
+  .nav-item {
     display: flex;
     margin-left: auto;
     gap: 40px;
@@ -129,6 +129,8 @@ body {
 
 .hero-images {
     background-color: #2e2f42;
+    padding: 188px 0;
+
 }  
 
 .title {
@@ -142,8 +144,10 @@ body {
 
 .button {
     font-family: "Roboto", sans-serif;
-    height: 50px;
+    height: 56px;
+    min-width: 169px;
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -152,7 +156,7 @@ body {
     letter-spacing: 0.04em;
     color: #fff;
     cursor: pointer;
-    display: flex;
+    display: block;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -165,12 +169,21 @@ body {
 }
 
 .tools {
-
+  padding: 120px 0;
 }
+
+.visually-hidden
 
 .tools-h {
     font-weight: 700;
     color: #2e2f42;
+    max-width: 496px;
+    margin-bottom: 8px;
+}
+
+.tools-list {
+  display: flex;
+  gap: 24px;
 }
 
 .tools-item {
@@ -187,6 +200,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    width: calc((100% - 72px) / 4);
 }
 
 .tools-text {
@@ -198,6 +212,7 @@ body {
 
 .our-team {
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .team {
@@ -205,11 +220,11 @@ body {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   gap: 32px;
    border-radius: 0 0 4px 4px;
    padding: 0px 0px 32px 0px;
    width: 264px;
    height: 380px;
+   gap: 24px;
 }
 
 .team-title {
@@ -220,15 +235,21 @@ body {
     letter-spacing: 0.02em;
     text-align: center; 
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .team-item {
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .team-images {
   display: block;
+}
+
+.card-container {
+  padding: 32px 0;
 }
 
 .team-link {
@@ -250,6 +271,7 @@ body {
 
 .portfolio {
   border-bottom: 1px;
+  padding: 120px 0 120px 0;
 }
 
 .portfolio-item {
@@ -275,8 +297,25 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-
+    margin-bottom: 72px;
 }
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-img {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card [
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
+]
 
 .portfolio-link {
     font-weight: 500;
@@ -284,6 +323,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
