@@ -1,18 +1,71 @@
 body {
     font-family: 'Roboto', sans-serif;
+    width: 1158px;
     color: #434455;
     background-color: #fff;
+    margin: 0;
   }
   
+  h1, h2, h3,
   ul,
   ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
   }
   
   a {
     text-decoration: none;
   }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .conteiner {
+    justify-content: center;
+  }
+
+  .section {
+    margin: 0;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
   
+  .page-header {
+    border-bottom: 1px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-left: auto;
+  }
+
   .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -21,6 +74,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
   }
   
   .header-logo .logo-part {
@@ -72,6 +130,9 @@ body {
 
 .button {
     font-family: "Roboto", sans-serif;
+    height: 50px;
+    border-radius: 4px;
+    padding: 16px 32px;
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
@@ -79,6 +140,11 @@ body {
     letter-spacing: 0.04em;
     color: #fff;
     cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .button:hover, 
@@ -93,6 +159,14 @@ body {
 .tools-h {
     font-weight: 700;
     color: #2e2f42;
+}
+
+.tools-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .tools-title {
@@ -114,6 +188,18 @@ body {
     background-color: #f4f4fd;
 }
 
+.team {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 32px;
+   border-radius: 0 0 4px 4px;
+   padding: 0px 0px 32px 0px;
+   width: 264px;
+   height: 380px;
+}
+
 .team-title {
     font-weight: 500;
     text-transform: capitalize;
@@ -124,11 +210,9 @@ body {
     color: #2e2f42;
 }
 
-.team {
-}
-
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% -(24px*3)) /4);
 }
 
 .team-images {
@@ -152,6 +236,22 @@ body {
 }
 
 .portfolio {
+  border-bottom: 1px;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-title {
