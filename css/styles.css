@@ -96,6 +96,10 @@ body {
     padding-top: 24px;
   }
 
+  .nav-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -107,14 +111,19 @@ body {
 
   .nav-link.studio {
     position: relative;
+    color: #404bbf; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-link.studio::after {
     content: "";
+    position: absolute;
     display: block;
     border-radius: 2px;
+    bottom: -1px; 
     width: 48px;
     height: 4px;
+    left: 0; 
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -131,6 +140,7 @@ body {
   .nav-list:hover,
   .nav-list:focus {
     color: color: #404bbf;
+
   }
   
   
@@ -169,9 +179,6 @@ body {
   }
 
 .hero-images {
-}  
-
-.hero-container {
   background-color: #2e2f42;
   background-image: url(./images/image-bg.jpg);
   background-repeat: no-repeat;
@@ -184,6 +191,10 @@ rgba(46, 47, 66, 0.7),
 ), url(./images/image-bg.jpg);
   padding: 188px 0;
   max-width: 1440рх;
+}  
+
+.hero-container {
+ 
 }
 
 .title {
@@ -220,6 +231,7 @@ rgba(46, 47, 66, 0.7),
     gap: 10px;
     margin: 0 auto;
     display: block;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
 }
 
 .button:hover, 
@@ -478,6 +490,7 @@ rgba(46, 47, 66, 0.7),
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    margin-bottom: 16px;
 }
 
 .footer-social-link {
