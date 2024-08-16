@@ -93,7 +93,7 @@ body {
   .nav-list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
+   
   }
 
   .nav-item {
@@ -139,7 +139,7 @@ body {
 
   .nav-list:hover,
   .nav-list:focus {
-    color: color: #404bbf;
+    color: #404bbf;
 
   }
   
@@ -180,7 +180,7 @@ body {
 
 .hero-images {
   background-color: #2e2f42;
-  background-image: url(./images/image-bg.jpg);
+  background-image: url(./image-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,13 +188,13 @@ body {
 to bottom, 
 rgba(46, 47, 66, 0.7),
  rgba(46, 47, 66, 0.7)
-), url(./images/image-bg.jpg);
+), url(./image-bg.jpg);
   padding: 188px 0;
   max-width: 1440рх;
 }  
 
 .hero-container {
- 
+  max-width: 1440px;
 }
 
 .title {
@@ -504,7 +504,7 @@ rgba(46, 47, 66, 0.7),
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
 }
 
 .social-link-footer {
