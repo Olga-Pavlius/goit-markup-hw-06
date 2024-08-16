@@ -147,14 +147,6 @@ body {
 
   }
   
-  
-
-  .nav-link:hover,
-  .nav-link:focus,
-  .nav-link:active {
-
-  }
-  
   .contacts-list {
     font-style: normal;
     display: flex; 
@@ -196,10 +188,6 @@ rgba(46, 47, 66, 0.7),
   padding: 188px 0;
   max-width: 1440px;
 }  
-
-.hero-container {
- 
-}
 
 .title {
     font-weight: 700;
@@ -387,8 +375,11 @@ rgba(46, 47, 66, 0.7),
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  
+}
+
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .cower-text {
@@ -397,6 +388,7 @@ rgba(46, 47, 66, 0.7),
 
 .card {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .cower-wrap {
@@ -512,7 +504,7 @@ rgba(46, 47, 66, 0.7),
 }
 
 .social-link-footer {
-  display: flex;
+ display: flex;
  align-items: flex-start;
  justify-content: flex-start;
  flex-direction: row;
@@ -525,14 +517,14 @@ rgba(46, 47, 66, 0.7),
 
 .footer-link {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
