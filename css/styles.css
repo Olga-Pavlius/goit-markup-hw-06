@@ -197,8 +197,7 @@ rgba(46, 47, 66, 0.7),
 }  
 
 .hero-container {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./image-bg.jpg);
-  max-width: 1440px;
+ 
 }
 
 .title {
