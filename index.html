@@ -41,7 +41,7 @@
         </div>
     </header>
  <!--endregion header-->
- <main>
+ <main class="main">
      <!--hero image-->
     <section class="hero-images">
         <div class="container hero-container">
@@ -328,11 +328,11 @@
  <!--region footer-->
  <footer class="footer">
     <div class="container footer-container">
-        <div class="container-footer-logo">
+        <div class="text">
            <a class="logo-footer" href="./index.html">Web<span class="logo-span-footer">Studio</span></a>
            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
-        <div class="footer-social-link">
+        <div class="social">
             <p class="social-media">Social media</p>
             <ul class="social-link-footer">
                 <li class="social-link-list-footer">
@@ -365,8 +365,80 @@
                </li>   
              </ul>
         </div>
-    </div>
+        <div class="e-mail-input">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="form" name="e-mail" autocomplete="off">
+            <label class="footer-email">
+              <input class="footer-input-email" type="email" name="user-email" placeholder="E-mail">
+            </label>
+            <button class="button-subscribe" type="submit">Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href=""></use>
+              </svg>
+            </button>
+          </form>
+          
+        </div>
+      </div>
  </footer>
    <!--endrregion footer-->
+ <div class="backdrop is-open">
+  <div class="modal">
+    <button class="modal-close-button">
+      <svg class="modal-close-svg" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-text">Leave your contacts and we will call you back</p>
+    <form class="modal-form">
+      <div clas="modal-contacts-box">
+       <div class="modal-contacts">
+          <label class="modal-lable" for="user-name">Name</label>
+          <div class="modal-box">
+            <input class="modal-input" type="text" id="user-name" required/>
+             <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+             </svg>
+       </div>
+       <div class="modal-contacts">
+          <label class="modal-lable" for="user-phone">Phone</label>
+          <div class="modal-box">
+            <input class="modal-input" type="text" id="user-phone" required/>
+             <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+             </svg>
+       </div>
+       <div class="modal-contacts">
+           <label class="modal-lable" for="user-email">Email</label>
+           <div class="modal-box">
+             <input class="modal-input" type="text" id="user-email"/>
+             <svg class="input-icon" width="24" height="18">
+               <use href="./images/icons.svg#icon-mail"></use>
+             </svg>
+           </div>
+       </div>
+       <div class="modal-contacts">
+           <div class="modal-textarea-box">
+             <label class="modal-lable" for="user-comment">Comments</label>
+             <textarea class="textarea" name="user-coment" id="user-coment" placeholder="Text input"></textarea>
+            </div>
+       </div>
+     </div>
+     <div class="modal-user-privacy-box">
+       <input class="user-privacy-input visually-hidden" type="checkbox">
+        <label class="user-privacy-label" for="user-privacy">
+          <span class="click">
+              <svg class="click-svg" width="10" height="10">
+               <use href="./images/icons.svg#icon-clic"></use>
+              </svg>
+          </span>
+         <div class="text-private">I accept the terms and conditions of the </div>
+           <a class="privacy-policy" href="">Privacy Policy</a>
+       </label>
+     </div>
+     <button class="modal-button" type="submit">Send</button>
+    </form>
+  </div>
+ </div>
 </body>
 </html>
