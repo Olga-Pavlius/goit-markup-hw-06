@@ -593,6 +593,7 @@ label {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    color: #ffffff;
 }
 
 
@@ -612,6 +613,7 @@ label {
     align-items: center;
     text-align: center;
     border-radius: 4px;
+    border: none; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -808,19 +810,16 @@ margin-bottom: 24px;
 width: 360px;
 height: 16px;
 margin-bottom: 24px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #8e8f99;
 }
 
 .click-svg {
   border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
-}
-
-.text-private {
-  font-weight: 400;
-font-size: 12px;
-line-height: 1.16667;
-letter-spacing: 0.04em;
-color: #8e8f99;
 }
 
 .privacy-policy {
