@@ -787,15 +787,22 @@ color: #8e8f99;
 
 .textarea {
  border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 4px;
-width: 360px;
-height: 120px;
-padding: 8px 24px 24px 16px;
+ border-radius: 4px;
+ width: 360px;
+ height: 120px;
+ padding: 8px 24px 24px 16px;
   font-weight: 400;
+  outline: transparent; 
+  resize: none; 
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus {
+  border-color: #4D5AE5; 
 }
 
 .modal-user-privacy-box {
@@ -828,7 +835,20 @@ letter-spacing: 0.04em;
 color: #8e8f99;
 }
 
+.click {
+  width: 16px; 
+  height: 16px; 
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  fill: transparent; 
+}
+
 .click-svg {
+  height: 8px;
   border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 }
@@ -843,6 +863,7 @@ text-decoration-skip-ink: none;
 }
 
 .modal-button {
+  min-width: 169px;
   display: block;
 align-items: flex-start;
 justify-content: flex-start;
@@ -851,7 +872,6 @@ gap: 10px;
 border: none;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #4d5ae5;
@@ -860,6 +880,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
+cursor: pointer;
 color: #fff;
 margin: 0 auto;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
