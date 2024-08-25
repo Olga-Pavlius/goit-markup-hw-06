@@ -677,16 +677,11 @@ label {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-.modal-close-button:hover {
-  background-color: #404bbf; 
-  border: none;
-}
-
+.modal-close-button:hover,
 .modal-close-button:focus {
   background-color: #404bbf; 
   border: none;
-}
-  
+}  
 
 .modal-close-svg {
   fill: #2e2f42;
@@ -694,7 +689,7 @@ label {
 }
 .modal-close-button:hover > .modal-close-svg,
 .modal-close-button:focus > .modal-close-svg {
-fill: #4D5AE5;
+fill: #ffffff;
 }
 
 .modal-text {
@@ -746,7 +741,7 @@ label {
 .modal-lable {
   font-weight: 400;
 font-size: 12px;
-line-height: 1.16667;
+line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
 }
