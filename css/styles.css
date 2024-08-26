@@ -624,7 +624,7 @@ label {
 }
 
 .modal {
-  background-color: #fcfcfc;
+    background-color: #fcfcfc;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -708,6 +708,7 @@ label {
 }
 
 .modal-box {
+ 
 }
 
 .modal-box:hover,
