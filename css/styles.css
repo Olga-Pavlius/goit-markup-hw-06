@@ -362,10 +362,11 @@ rgba(46, 47, 66, 0.7),
 .tools-title {
   font-weight: 700;
 font-size: 36px;
-line-height: 1.11111;
+line-height: 1.1;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .tools-item {
@@ -377,7 +378,7 @@ color: #2e2f42;
 }
 
 .tools-text {
-  font-weight: 700
+  font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -602,6 +603,7 @@ color: #2e2f42;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    margin: 0;
 }
 
 .social {
@@ -661,7 +663,6 @@ color: #2e2f42;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  margin-left: auto;
 }
 
 .subscribe-text {
@@ -1047,9 +1048,15 @@ color: #8e8f99;
   }
 
   .contacts-list {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.header-container {
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
     
     .hero-images {
@@ -1074,8 +1081,19 @@ color: #8e8f99;
     gap: 72px 24px;
   }
 
+  .tools-title {
+    text-align: left;
+  }
+
   .tools-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .taem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px 24px;
   }
 
   .project-card {
@@ -1089,13 +1107,11 @@ color: #8e8f99;
 
   .container.footer-container {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       flex-direction: row;
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 72px 24px;
-      justify-content: start;
-      width: 584px;
 }
 
   .text {
@@ -1103,11 +1119,11 @@ color: #8e8f99;
   }
 
   .logo-footer {
-    display: flex;
-    justify-content: start;
+    text-align: left;
+    
   }
 
-  .footer-text:{
+  .footer-text {
     margin: 0;
   }
 
@@ -1123,7 +1139,7 @@ color: #8e8f99;
   }
 
   .subscribe-text {
-    text-align: start;
+    text-align: left;
   }
 
   .form {
@@ -1140,6 +1156,16 @@ color: #8e8f99;
   .contacts {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 
   .hero-images {
@@ -1195,6 +1221,9 @@ color: #8e8f99;
    }
 
    .tools-title {
+    font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
     text-align: left;
    }
 
@@ -1212,8 +1241,13 @@ color: #8e8f99;
     padding: 100px 0;
 }
 
+.container.footer-container {
+
+}
+
 .footer-container {
-  width: 1158px;
+  max-width: 1158px;
+  display: flex;
   gap: 0;
   align-items: baseline;
 }
