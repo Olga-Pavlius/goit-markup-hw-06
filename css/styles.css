@@ -946,7 +946,7 @@ color: #8e8f99;
   flex-direction: row;
   gap: 8px;
   border-radius: 4px;
-  width: 360px;
+ 
   height: 16px;
   margin-bottom: 24px;
   font-weight: 400;
@@ -966,11 +966,12 @@ color: #8e8f99;
   align-items: center; 
   justify-content: center; 
   fill: transparent; 
+  flex-shrink: 0;
 }
 
 .custom-text {
-  display: flex;
-  flex-direction: column;
+  
+  
   gap: 8px;
 }
 
@@ -1210,6 +1211,10 @@ letter-spacing: 0.04em;
   .modal {
     width: 408px;
     min-height: 584px;
+  }
+
+  .custom-label-user-checkbox {
+    width: 360px;
   }
 
   .custom-text {
