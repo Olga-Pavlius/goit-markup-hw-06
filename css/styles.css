@@ -246,15 +246,11 @@ body {
 }
 
 .mob-contacts-box {
-  display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 24px;
+  font-style: normal;
 }
 
 .mob-contacts-item {
-  padding-bottom: 24px;
+ 
 }
 
 .mob-contacts-link-tel {
@@ -263,6 +259,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #4d5ae5;
+margin-bottom: 24px;
 }
 
 .mob-contacts-link {
@@ -290,8 +287,6 @@ color: #4d5ae5;
 
   .section {
     margin: 0;
-    margin-top: 120px;
-    margin-bottom: 120px;
   }
 
 .hero-images {
@@ -304,7 +299,8 @@ color: #4d5ae5;
 rgba(46, 47, 66, 0.7),
  rgba(46, 47, 66, 0.7)
 ), url(../images/main-bg-mob.jpg);
-  padding: 72px 52px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   max-width: 320px;
   margin: 0 auto;
 }  
@@ -1045,7 +1041,7 @@ color: #8e8f99;
  }
 
  .contacts {
-  display: flex;
+   display: flex;
  }
 
  .contacts-list {
@@ -1053,9 +1049,16 @@ color: #8e8f99;
    flex-direction: column;
    gap: 12px;
    font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+ }
+
+ .contacts-item {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
  }
 
   .button-btn {
@@ -1072,7 +1075,6 @@ letter-spacing: 0.04em;
        rgba(46, 47, 66, 0.7)
       ), url(../images/main-bg-tab.jpg);
       max-width: 768px;
-      padding: 72px 52px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution:2dppx), (min-resolution:192dpi) {
@@ -1155,7 +1157,8 @@ letter-spacing: 0.04em;
         text-align: left;
        /* justify-content: center;*/
       gap: 72px 24px;
-      padding: 96px 108px;
+      padding-left: 108px;
+      padding-right: 108px;
 }
 
   .text {
@@ -1211,6 +1214,7 @@ letter-spacing: 0.04em;
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px;
   }
 
   .custom-label-user-checkbox {
@@ -1228,7 +1232,6 @@ letter-spacing: 0.04em;
   .container {
     max-width: 1158px;
     padding: 0 15px;
-    padding: 72px 24px 24px;
   }
 
   .contacts {
@@ -1250,7 +1253,8 @@ letter-spacing: 0.04em;
        rgba(46, 47, 66, 0.7)
       ), url(../images/main-bg.jpg);
       max-width: 1440px;
-      padding: 188px 472px;
+      padding-top: 120px;
+      padding-bottom: 120px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution:2dppx), (min-resolution:192dpi) {
@@ -1309,10 +1313,20 @@ letter-spacing: 0.04em;
     font-weight: 400;
    }
 
+   .our-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+   }
+
    .team {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 24px;
+   }
+
+   .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
    }
 
    .portfolio-item {
