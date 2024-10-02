@@ -1055,7 +1055,7 @@ color: #8e8f99;
    letter-spacing: 0.04em;
  }
 
- .contacts-item {
+ .contacts-link {
    font-weight: 400;
    font-size: 12px;
    line-height: 1.17;
@@ -1083,12 +1083,7 @@ color: #8e8f99;
       margin-right: 76px;
   }
 
-  .contacts-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-}
+  
 
 .header-container {
   padding-top: 112px;
@@ -1245,7 +1240,7 @@ color: #8e8f99;
     gap: 40px;
   }
 
-  .contacts-item {
+  .contacts-link {
     font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
